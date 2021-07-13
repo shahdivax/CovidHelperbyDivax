@@ -79,6 +79,7 @@ while True:
                         print("This might help you ")
                         print()
                         print("Format : { Name , Adddress , City , Contact no. , item for donstion } Of Donar")
+                        print("\t",d)
                         i+=1
                         break
                     else:
@@ -118,3 +119,6 @@ while True:
 print()
 
 print("Thanks for using our app")
+
+#to give a break before ending the program
+x=input()
