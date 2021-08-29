@@ -174,7 +174,7 @@ class covidhelp:
         return len(self.Rthingfield.get()) != 0
     
     def number(self):
-        return len(self.Rthingfield.get()) == 10
+        return len(self.numfield.get()) == 10
     
     
 if __name__ == '__main__':
