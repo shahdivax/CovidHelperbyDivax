@@ -1,4 +1,4 @@
-from tkinter import Button, Label, LabelFrame, PhotoImage, Tk ,W,E,N,S,Entry,END,StringVar,Scrollbar,Toplevel
+from tkinter import Button, Label, LabelFrame, PhotoImage, Tk ,W,E,Entry,END,Scrollbar
 from tkinter import ttk
 import sqlite3
 
