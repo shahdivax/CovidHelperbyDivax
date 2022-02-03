@@ -33,7 +33,8 @@ class covidhelp:
         
         
         
-    def icon(self):
+    @staticmethod
+    def icon():
         photo = PhotoImage(file="C:/Users/lenovo/Desktop/covid-help/logos/LogoMakr-0WzAEA.gif")
         label = Label(image=photo)
         label.image = photo
