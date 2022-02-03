@@ -1,19 +1,19 @@
-Database=[]
+Database = []
 print()
-print("welcome to COVID help provider \nAn ULTIMATE helper for people suffering form covid issues")
- 
-
+print(
+    "welcome to COVID help provider \nAn ULTIMATE helper for people suffering form covid issues"
+)
 
 while True:
-    
-    print()
-    print("How can we help \nChoose 1 if you want to donate \nChoose 2 if u Need Help")
-    choose = int(input('Enter no. : '))
 
-    
+    print()
+    print(
+        "How can we help \nChoose 1 if you want to donate \nChoose 2 if u Need Help"
+    )
+    choose = int(input("Enter no. : "))
 
     def Donar():
-        
+
         temp = []
         name = input("Enter your Name : ")
         print()
@@ -23,7 +23,9 @@ while True:
         print()
         contact = int(input("Enter your contact : "))
         print()
-        print("What u want to donate \nEnter 1 for food \nEnter 2 for madical accessories \nEnter 3 for oxygen")
+        print(
+            "What u want to donate \nEnter 1 for food \nEnter 2 for madical accessories \nEnter 3 for oxygen"
+        )
         print()
         thing = int(input("Enter a no. : "))
 
@@ -32,8 +34,7 @@ while True:
         temp.append(city.upper())
         temp.append(contact)
 
-
-        if thing == 1 :
+        if thing == 1:
             temp.append("Food")
         elif thing == 2:
             temp.append("Medical accessories")
@@ -41,23 +42,22 @@ while True:
             temp.append("oxygen")
 
         Database.append(temp)
-        #print(Database)
+        # print(Database)
         print()
         return print("Data added succesfully")
-        
-        
-                    
 
     def reciver():
-        print("How can we help u \nEnter 1 for food \nEnter 2 for madical accessories \nEnter 3 for oxygen")
+        print(
+            "How can we help u \nEnter 1 for food \nEnter 2 for madical accessories \nEnter 3 for oxygen"
+        )
         print()
         no = int(input("Enter a no. : "))
         print()
-        print("We Need your City name for more service") 
+        print("We Need your City name for more service")
         c = input("Enter your city name : ")
         city = c.upper()
-        
-        if no == 1 :
+
+        if no == 1:
             t = "Food"
         elif no == 2:
             t = "Medical accessories"
@@ -65,12 +65,12 @@ while True:
             t = "oxygen"
 
         if len(Database) == 0:
-            print("we Do not have any donner yet \n sorry for this " )
+            print("we Do not have any donner yet \n sorry for this ")
         else:
-            i=0
-            
-            #print(city)
-            
+            i = 0
+
+            # print(city)
+
             while i < len(Database):
                 d = Database[i]
                 if d[2] == city:
@@ -78,26 +78,28 @@ while True:
                         print()
                         print("This might help you ")
                         print()
-                        print("Format : { Name , Adddress , City , Contact no. , item for donstion } Of Donar")
-                        print("\t",d)
-                        i+=1
+                        print(
+                            "Format : { Name , Adddress , City , Contact no. , item for donstion } Of Donar"
+                        )
+                        print("\t", d)
+                        i += 1
                         break
                     else:
                         print()
                         print("Sorry no donor available for your requirement")
-                        i+=1
+                        i += 1
                         break
 
                 else:
                     print()
                     print("Sorry no donor available for your Location")
-                    i+=1
+                    i += 1
                     break
-                
-                    
+
     if choose == 1:
         print()
-        print("we need some of the details \nPlease enter everything in capital")
+        print(
+            "we need some of the details \nPlease enter everything in capital")
         Donar()
         print()
         print("Enter 1 to continue \nEnter 2 to exit")
@@ -110,7 +112,9 @@ while True:
         print()
         reciver()
         print()
-        print("If u want we can check for near by cities or other Help \nEnter 1 for Yes \nEnter 2 for No")
+        print(
+            "If u want we can check for near by cities or other Help \nEnter 1 for Yes \nEnter 2 for No"
+        )
         changeC = int(input())
         if changeC == 1:
             reciver()
@@ -120,5 +124,5 @@ print()
 
 print("Thanks for using our app")
 
-#to give a break before ending the program
-x=input()
+# to give a break before ending the program
+x = input()
