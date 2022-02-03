@@ -165,7 +165,7 @@ class covidhelp:
     
     
     def validated(self):
-        return len(self.namefield.get()) != 0 and len(self.emailfield.get()) != 0 and len(self.numfield.get()) != 0 and len(self.cityfield.get()) != 0 and len(self.thingfield.get()) != 0
+        return 0 not in (len(self.namefield.get()), len(self.emailfield.get()), len(self.numfield.get()), len(self.cityfield.get()), len(self.thingfield.get()))
     
     def Rvalidated(self):
         return len(self.Rcityfield.get()) != 0 
